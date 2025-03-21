@@ -33,7 +33,7 @@ The exact firmware version is DCS-935L FW 1.06.02
 - uncompress the .sqsh file using unsquashfs
 ![image](https://github.com/user-attachments/assets/c6cc1f26-778a-4d8e-a29e-53fb72db7fd6)
 
-- navigate to squashfs-root directory and by listing the files, you will just see that it's a linux system
+- navigate to squashfs-root directory and by listing the files, you will just see that it's a linux filesystem
 ![image](https://github.com/user-attachments/assets/a33b1267-332c-41b7-96f8-07a827da2c97)
 
 
