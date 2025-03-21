@@ -48,7 +48,12 @@ The exact firmware version is DCS-935L FW 1.06.02
 ![image](https://github.com/user-attachments/assets/9cf9727f-4a4b-4743-9f7c-f8fbafc8c88d)
   
   - the binary file is of MIPS architecture
- 
+
+- look for harcoded credentials
+  - the etc/passwd file is a symlink to mnt/flash/config/passwd, which didn't exist at the time.
+  - the etc/passwd_default file only has an admin account with no hardcoded password. 
+  - ![image](https://github.com/user-attachments/assets/a496bf0d-cd91-4e85-8c48-d1f453a48854)
+
 ## Emulation on Raspberry Pi 5
 
 - install qemu-user-static
