@@ -16,3 +16,6 @@ The exact firmware version is DCS-935L FW 1.06.02
 - We can use Binwalk, which is a tool for searching binary images for embedded files and executable code, to gather more information about the .bin file
 
 ![image](https://github.com/user-attachments/assets/ac9ee776-bbae-4669-8893-7a7952d8b88c)
+
+  - LZMA compressed data
+  - Squashfs, which is a compressed read-only file system for Linux.
