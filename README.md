@@ -4,3 +4,15 @@ A simple walkthrough to analysing, emulating and hacking DCS-935L firmware
 The exact firmware version is DCS-935L FW 1.06.02
 
 - I'll start up the Pi 5 and download the firmware from the official D-Link website https://support.dlink.com.au/Download/download.aspx?product=DCS-935L
+
+![image](https://github.com/user-attachments/assets/aa7827ba-2246-4ea1-9376-1fa706af3034)
+
+- Run strings on the .bin file to check for interesting entries that migh help us understand the structure of the firmware
+
+![image](https://github.com/user-attachments/assets/59688f78-8197-4592-8a9c-0c568359bb20)
+
+- Here, we see a LZMA which is a compression algorithm for linux files.
+
+- We can use Binwalk, which is a tool for searching binary images for embedded files and executable code, to gather more information about the .bin file
+
+![image](https://github.com/user-attachments/assets/ac9ee776-bbae-4669-8893-7a7952d8b88c)
