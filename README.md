@@ -100,11 +100,29 @@ The exact firmware version is DCS-935L FW 1.06.02
       
     - Mounting it makes sure that the kernel's internal state and other critical information are available inside the environment.
 
-- Use chroot to change the root directory to the squashfs environment
+- Use chroot to change the root directory to the squashfs environment, we're like SSHing into our iot camera.
 
       chroot . /bin/sh
 
 ![image](https://github.com/user-attachments/assets/5dcd5e63-92c0-46b3-b278-b40665f432e7)
+![image](https://github.com/user-attachments/assets/d487372b-9195-4f4b-9c76-553fc48f1047)
+
+- Run the /etc/rc.d/rcS script
+
+![image](https://github.com/user-attachments/assets/de863591-d5b4-48d3-a39a-4d3af5d39716)
+
+- check for listening ports that has been opened
+
+      netstat -tln
+  - -t: TCP sockets
+  - -l: Listening sockets
+  - -n: don't resolve names
+
+![image](https://github.com/user-attachments/assets/103d2550-1fcc-4b6f-8962-b8b795c2202e)
+
+
+
+
 
   
 
