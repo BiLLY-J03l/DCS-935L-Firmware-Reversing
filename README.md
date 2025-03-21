@@ -148,7 +148,13 @@ The exact firmware version is DCS-935L FW 1.06.02
 ![image](https://github.com/user-attachments/assets/9eb38a93-58c0-436b-8dd9-bb4848e7e1d5)
 
 
+- To Stop the server interface and unmount the directories, do the following
+
+      etc/rc.d/rcS.d/S90httpd-0 stop
+![image](https://github.com/user-attachments/assets/aed7d1c5-9341-410c-a35e-1d1022aaf798)
+![image](https://github.com/user-attachments/assets/6d135b7d-f53d-4dd4-a606-e5cb68224226)
+![image](https://github.com/user-attachments/assets/8ec08233-e3dc-4f5b-961b-0d05c75f8658)
+![image](https://github.com/user-attachments/assets/5926ca32-642b-4cda-ba1b-48ec3b567035)
 
 
-  
 
