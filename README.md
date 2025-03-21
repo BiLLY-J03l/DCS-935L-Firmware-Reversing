@@ -56,7 +56,7 @@ The exact firmware version is DCS-935L FW 1.06.02
 
 - look for harcoded credentials
   - the etc/passwd file is a symlink to mnt/flash/config/passwd, which didn't exist at the time.
-  - the etc/passwd_default file only has an admin account with no hardcoded password.
+  - the etc/passwd_default file only has an admin account with a hardcoded password, which is blank.
     
   - ![image](https://github.com/user-attachments/assets/a496bf0d-cd91-4e85-8c48-d1f453a48854)
 
@@ -139,6 +139,12 @@ The exact firmware version is DCS-935L FW 1.06.02
 ![image](https://github.com/user-attachments/assets/6528ac6e-d2e9-4c52-adae-7d50622ecbfe)
 ![image](https://github.com/user-attachments/assets/9f565511-36a2-4ea3-a2bc-5e3249738b95)
 
+
+- Navigate to the address http://raspberrpi.local:8088
+  
+![image](https://github.com/user-attachments/assets/1222ca68-81dd-4cc7-aa96-78d082b89ed2)
+![image](https://github.com/user-attachments/assets/60879c47-b52e-45e1-9f5d-6aa0df7f1d43)
+![image](https://github.com/user-attachments/assets/9eb38a93-58c0-436b-8dd9-bb4848e7e1d5)
 
 
 
