@@ -36,6 +36,12 @@ The exact firmware version is DCS-935L FW 1.06.02
 - navigate to squashfs-root directory and by listing the files, you will just see that it's a linux filesystem
 ![image](https://github.com/user-attachments/assets/a33b1267-332c-41b7-96f8-07a827da2c97)
 
+- list the bin/ directory, you will see that all the binaries are symbolic links to busybox
+![image](https://github.com/user-attachments/assets/150a5332-a619-4843-b61c-5ebca6990ee2)
+
+**- What is BusyBox?**
+  - BusyBox is a software suite that provides several Unix utilities in a single executable file. It runs in a variety of POSIX environments such as Linux, Android, and FreeBSD, although many of the tools it provides are designed to work with interfaces provided by the Linux kernel. It was specifically created for embedded operating systems with very limited resources.
+
 
 ## Emulation on Raspberry Pi 5
 
