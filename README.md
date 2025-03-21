@@ -56,3 +56,10 @@ The exact firmware version is DCS-935L FW 1.06.02
       apt install qemu-user-static
 ![image](https://github.com/user-attachments/assets/8e9dbe13-fcc9-406e-b127-444c6478b520)
 
+- use qemu-mips-static on bin/busybox binary
+
+      qemu-mips-static bin/busybox
+![image](https://github.com/user-attachments/assets/0df5801e-90fd-4ad9-8174-4c0a71db9913)
+
+  
+
