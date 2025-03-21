@@ -31,9 +31,13 @@ The exact firmware version is DCS-935L FW 1.06.02
 ![image](https://github.com/user-attachments/assets/48c55b8e-be23-4a8b-8a25-5e73e0dccdee)
 
 - uncompress the .sqsh file using unsquashfs
+![image](https://github.com/user-attachments/assets/c6cc1f26-778a-4d8e-a29e-53fb72db7fd6)
+
 
 ## Emulation on Raspberry Pi 5
 
 - install qemu-user-static
 
       apt install qemu-user-static
+![image](https://github.com/user-attachments/assets/8e9dbe13-fcc9-406e-b127-444c6478b520)
+
