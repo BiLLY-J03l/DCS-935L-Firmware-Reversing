@@ -28,3 +28,12 @@ The exact firmware version is DCS-935L FW 1.06.02
     - skip --> skip N ibs-sized input blocks
     - bs --> read and write up to BYTES bytes at a time
     - of --> write to FILE instead of stdout
+![image](https://github.com/user-attachments/assets/48c55b8e-be23-4a8b-8a25-5e73e0dccdee)
+
+- uncompress the .sqsh file using unsquashfs
+
+## Emulation on Raspberry Pi 5
+
+- install qemu-user-static
+
+      apt install qemu-user-static
