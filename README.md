@@ -19,3 +19,12 @@ The exact firmware version is DCS-935L FW 1.06.02
 
   - LZMA compressed data
   - Squashfs, which is a compressed read-only file system for Linux.
+
+- Now we carve out the squashfs using DD
+
+      dd if=DCS-935L_A1_FW_1.06.02_20150717_r3108.bin skip=1431586 bs=1 of=firmware.sqsh
+
+    - if --> read from FILE instead of stdin
+    - skip --> skip N ibs-sized input blocks
+    - bs --> read and write up to BYTES bytes at a time
+    - of --> write to FILE instead of stdout
