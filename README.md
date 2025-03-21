@@ -120,6 +120,25 @@ The exact firmware version is DCS-935L FW 1.06.02
 
 ![image](https://github.com/user-attachments/assets/103d2550-1fcc-4b6f-8962-b8b795c2202e)
 
+- It was supposed to have a web port open for the Admin Panel, but there was a problem in the init scripts
+- I traced the problem to the file /etc/rc.d/rcS.d/S90httpd-0
+  -It takes the http_port variable from executing '/usr/sbin/userconfig -read HTTP port', which when executed doesn't return any valid port number.
+  
+  ![image](https://github.com/user-attachments/assets/120cb2ce-e2b8-4fce-b8ba-415261169383)
+
+  -It takes the https_enable variable from executing '/usr/sbin/userconfig -read HTTPS Enable', which when executed doesn't return any valid value as well.
+
+  ![image](https://github.com/user-attachments/assets/c0fa56b0-0d85-4d88-a530-56a8b0b93bfd)
+
+- I patched /etc/rc.d/rcS.d/S90httpd-0 file, and hardcoded the port number to 8088
+
+![image](https://github.com/user-attachments/assets/ac0e5a12-fca1-4a46-8cd2-bffb19d66f3a)
+
+- I chrooted into the environment again and rerun the init script and BINGO, port 8088 is open
+  
+![image](https://github.com/user-attachments/assets/6528ac6e-d2e9-4c52-adae-7d50622ecbfe)
+![image](https://github.com/user-attachments/assets/9f565511-36a2-4ea3-a2bc-5e3249738b95)
+
 
 
 
