@@ -42,7 +42,13 @@ The exact firmware version is DCS-935L FW 1.06.02
 **- What is BusyBox?**
   - BusyBox is a software suite that provides several Unix utilities in a single executable file. It runs in a variety of POSIX environments such as Linux, Android, and FreeBSD, although many of the tools it provides are designed to work with interfaces provided by the Linux kernel. It was specifically created for embedded operating systems with very limited resources.
 
+- Check what the binary arch is
 
+      file bin/busybox
+![image](https://github.com/user-attachments/assets/9cf9727f-4a4b-4743-9f7c-f8fbafc8c88d)
+  
+  - the binary file is of MIPS architecture
+ 
 ## Emulation on Raspberry Pi 5
 
 - install qemu-user-static
